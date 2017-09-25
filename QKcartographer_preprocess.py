@@ -86,6 +86,8 @@ for line in genetic_map_file.readlines():
 
 		if population_size != len(sline[3:]):
 			print 'Unequal progeny in population at marker ' + sline[0]
+			print 'Population_size = ' + str(population_size)
+			print 'No. of genotypes at marker = ' + str(len(sline[3:]))
 
 		population_size = len(sline[3:])
 	else:
